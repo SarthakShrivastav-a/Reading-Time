@@ -1,0 +1,37 @@
+    /* Center the content in the popup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Popup height as defined in manifest.json */
+    width: 300px; /* Popup width as defined in manifest.json */
+    text-align: center;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Paragraph styles */
+  #reading-time {
+    font-size: 16px;
+    color: #666;
+  }
+  

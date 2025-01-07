@@ -2,18 +2,33 @@
   "manifest_version": 3,
   "name": "Reading Time",
   "version": "1.0",
-  "description": "Predict the reading time of articles on any website.",
+  "description": "Predict reading time for articles.",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
     "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
-      "matches": ["<all_urls>"], 
-      "run_at": "document_idle"  
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
     }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
   ]
 }
